@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Sabhanaz Rashid Diya</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i> <span class="light">Sabhanaz Rashid Diya</span>
                 </a>
             </div>
 
@@ -53,10 +53,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#background">Background</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#analysis">Analysis</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -74,10 +74,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br>Created by Start Bootstrap.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <h1 class="heading">HOW OAKLAND POLICE IS COLLECTING YOUR SENSITIVE LOCATION DATA</h1>
+                        <a href="#background" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -87,24 +85,30 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="background" class="container content-section text-left">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <h2>Background</h2>
+                <p>Police cars mounted with automatic license plate readers (ALPRs) are always winding their way through the streets of Oakland. The cameras are recording the plate numbers of vehicles in the front and behind, as well as collecting footage on the surrounding areas. The <a href="http://www2.oaklandnet.com/oakca1/groups/police/documents/webcontent/oak058612.pdf">policy</a> of the Oakland Police Department (PD) is to utilize ALPR technology to capture and store digital license plate data and images in order to track stolen vehicles, monitor hit-and-run cases and record suspicious activity. Each morning, before the patrol gets into the car, they receive a "hit list" of plate numbers that are loaded into the readers and fires off an alert if any number matches plates of vehicles on the street. In the revised policy, Oakland PD has established a retention policy of 6 months, after which records will be destroyed.</p>
+                <p>In a 2012 <a href="https://www.aclu.org/feature/you-are-being-tracked">report</a>, American Civil Liberties Union (ACLU) identified that less than 1% of the data collected using ALPR technology matched the "hit list". This poses an important question: <b>what is being done with our sensitive, private location information?</b> The technology is automated, but a retention policy of up to 6 months means public agencies like the Oakland PD can put together pieces of location information. This reveals personal information such as political or political associations that can be abused and breaches privacy laws.</p>
+                <p>The data collected for this analysis was received as a result of public records request, leading to the release of over 2.7 million readings between 2010 and 2014 on the Oakland Open Data website. Other data sources include American Fact Finder (race and income), <a href="http://mtc.ca.gov/">Metropolitan Transport Commission</a> (traffic flow) and <a href="http://www.dot.ca.gov/trafficops/census/">Caltrains</a> (traffic flow). The following visualizations should provide more insight into how plate numbers are being collected, what neighborhoods are frequented and further analysis on disparaties, such as uneven surveillance on minority groups. 
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <!-- Analysis Section -->
+    <section id="analysis" class="content-section text-left">
+        <div class="analysis-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <h2>Data Analysis</h2>
+                    <p>By mapping the raw data of ALPR readings over time reveals specific neighborhoods faced more surveillance than others. The heatmap provides an overview of neighborhoods with repeated surveillance. </p>
+
+                    <iframe width="100%" height="500" frameborder="0" src="https://srdiya.carto.com/viz/5f7b604e-bd1c-11e6-a3c4-0ee66e2c9693/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    
+                    <p>The analysis gets more interesting as we gauge deeper into the data. I aggregated the number of license plate readings per day and plotted it against time to the trend. 
+
+                    <iframe src="p_dygraph.html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
                     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
                 </div>
             </div>
@@ -115,19 +119,19 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Contact</h2>
+                <p>To know more about the project or provide feedback, please email me.</p>
+                <p><a href="mailto:srdiya@berkeley.edu">srdiya[at]berkeley.edu</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/diya880" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="https://github.com/srdiya/Oakland-ALPR" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://facebook.com/srdiya" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
                 </ul>
             </div>
